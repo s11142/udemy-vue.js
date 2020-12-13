@@ -7,7 +7,9 @@
 
 <script>
   export default {
-    props: ['totalNumber'],
+    props: {
+      totalNumber: String //型を指定することでバリデーションチェックを行う。
+    },
     computed: {
       halfNumber () {
         return this.totalNumber / 2;d
