@@ -10,7 +10,7 @@
     props: ['totalNumber'],
     computed: {
       halfNumber () {
-        return this.totalNumber / 2;
+        return this.totalNumber / 2;d
       }
     },
     methods: {
