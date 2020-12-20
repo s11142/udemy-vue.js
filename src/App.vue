@@ -3,7 +3,7 @@
     <like-Header></like-Header>
     <h2>{{ number }}</h2>
     <like-Number :total-number="number"></like-Number>
-    <like-Number :total-number="number"></like-Number>
+    <like-Number :total-number="number" :test-props="testProps"></like-Number>
   </div>
 </template>
 
@@ -14,7 +14,8 @@
   export default {
     data () {
       return {
-        number: 18
+        number: 18,
+        testProps: 'test'
       }
     },
     components: {
