@@ -26,7 +26,7 @@
     },
     methods: {
       increment() {
-        this.totalNumber += 1;
+        this.$emit('my-click', this.totalNumber + 1)  // データを親コンポーネントに送る場合は第２引数に記入する
       }
     }
   }
